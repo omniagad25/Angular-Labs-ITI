@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        @for(card of cards; track card.id){
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem; margin-bottom: 20px;">
+                  <img [src]="card.image" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <h6 class="card-title">{{card.username}}</h6>
+                        <span class="ml-2">
+                            <i class="fas fa-star ms" [style.color]="card.is_verified ? 'green' : 'red'"></i>
+                          </span>
+                    </div>
+                    <h6 class="card-title">{{card.email}}</h6>
+                    <h6 class="card-title">{{card.phone}}</h6>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
