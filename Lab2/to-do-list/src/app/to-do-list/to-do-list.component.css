@@ -1,0 +1,19 @@
+.container {
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 15px;
+}
+
+p{
+    font-size: 30px;
+}

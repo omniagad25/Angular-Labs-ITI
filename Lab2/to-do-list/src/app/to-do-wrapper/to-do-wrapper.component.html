@@ -1,0 +1,9 @@
+
+<div class="container my-5">
+<app-to-do-form (sendItem)="receiveList($event)"></app-to-do-form>
+
+@for(task of toDoItem; track task)
+{
+  <app-to-do-list [listTask]="task" (sendToParent)="receiveFromChild($event)"></app-to-do-list>
+}
+</div>

@@ -1,0 +1,28 @@
+button{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.shadow{
+    width: 60%;
+    margin-left: 50%;
+}
+
+
+.card {
+    background-color: rgb(73, 121, 208);
+    height: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+  }
