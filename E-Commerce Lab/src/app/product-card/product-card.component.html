@@ -1,0 +1,24 @@
+<!-- <div class="card h-100">
+    <img [src]="cardItem.images" class="card-img-top" alt="..." />
+    <div class="card-body">
+      @if(cardItem.stock>0){
+      <span class="badge text-bg-success">In Stock</span>
+      }@else {
+      <span class="badge text-bg-secondary">OUt Of Stock</span>
+      }
+      <h5
+        class="card-title"
+        [ngClass]="cardItem.favorite ? 'favorite_cardItem' : 'text-secondary'"
+      >
+        {{ cardItem.title | uppercase}}
+      </h5>
+      <p class="card-text">{{ cardItem.description }}</p>
+      <p class="card-text fw-bold">Released : {{ cardItem.released | date : 'full' }}</p>
+      <button class="btn btn-primary mx-2" (click)="redirectToDetails(cardItem.id)">Show Details</button>
+    </div>
+    <div class="card-footer">
+      <small [ngStyle]="{ color: cardItem.stock ? 'red' : 'grey' }"
+        >{{ cardItem.price | discount }} $</small
+      >
+    </div>
+  </div> -->
