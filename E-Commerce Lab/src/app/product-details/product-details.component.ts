@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 import { Product } from '../interface/product';
 import { NgFor, NgClass, CommonModule } from '@angular/common';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-details',
@@ -10,7 +10,10 @@ import { NgFor, NgClass, CommonModule } from '@angular/common';
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'
 })
+
+
 export class ProductDetailsComponent {
+  constructor(private router: Router) { };
   products: Array<Product> =
   [
     {
@@ -594,29 +597,7 @@ export class ProductDetailsComponent {
       "createdAt": "2022-09-30T03:09:25.056Z"
     }
   ]
-  
-  constructor(private productService: ProductService) { }
-
-  ngOnInit(): void {
-    this.products = this.productService.getProducts();
-  }
-
-  generateStarRating(rating: number): { stars: string, color: string } {
-    const roundedRating = Math.round(rating * 2) / 2;
-    const fullStars = Math.floor(roundedRating);
-    const halfStar = roundedRating % 1 !== 0;
-
-    let stars = '';
-    for (let i = 0; i < fullStars; i++) {
-      stars += '★';
-    }
-
-    if (halfStar) {
-      stars += '★';
-    }
-
-  
-
-    return { stars };
+  movetodetailspage(id: number) {
+    this.router.navigate(["/product", id]);
   }
 }

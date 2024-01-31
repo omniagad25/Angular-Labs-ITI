@@ -1,0 +1,23 @@
+#formDiv{
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: black;
+    background-color: lightgoldenrodyellow;
+    width: 40%;
+    padding: 30px;
+
+}
+
+.btn{
+    background-color: orangered;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+}
